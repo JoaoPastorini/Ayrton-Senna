@@ -1,0 +1,273 @@
+:root{
+    --cor-do-texto: #FAF6F0;
+    --cor-do-fundo: #252525;
+    --cor-header: #222020;
+}
+
+html{
+   scroll-behavior: smooth;
+}  
+
+body{
+    background-color: var(--cor-do-fundo);
+    margin: 0%;
+}
+
+.navegacao{
+    background-color: var(--cor-header);
+    color: var(--cor-do-texto);
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.navegacao__bot{
+   margin: 5px 25px 5px 25px;
+   font-family: "Nokora", sans-serif;
+   text-decoration: none;
+   color: var(--cor-do-texto);
+   text-shadow: black 0.1em 0.1em 0.2em;
+   font-weight: 500;
+}
+
+.navegacao__bot:hover{
+    color: #db1212;
+    
+}
+
+/*Primeira pag*/
+
+.principal_pag{
+   z-index: 1;
+   background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    color: var(--cor-do-texto);
+    background-image: url(imagens/1990\ Monaco\ Grand\ Prix\ by\ F1-history\ on\ DeviantArt\ 1.png)
+ }
+
+ .principal_pag_textos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10% 10%;
+  
+ }
+ 
+ .nome{
+    margin: 0%;
+    font-family: "Mate SC", sans-serif;
+    font-size: 40px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: 400;
+ }
+ 
+ .sobrenome{
+    margin: 0 0 80px 0;
+    font-family: "Mate SC", sans-serif;
+    font-size: 64px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: 500;
+ }
+
+
+ .bibliografia__titulo{
+    font-family: "Nokora", sans-serif;
+    font-size: 28px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin: 1em 1em;
+ }
+
+ .bibliografia__texto{
+    font-family: "Mate SC", sans-serif;
+    font-size: 24px;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    font-weight: 400;
+
+ }
+
+ /*Segunda pag*/
+
+ .secundaria_pag{
+   z-index: 1;
+    display: flex;
+    height: 100vh;
+    color: var(--cor-do-texto);
+    background-color: var(--cor-do-fundo);
+ }
+
+ .secundaria_pag_textos{
+    display: flex;
+ }
+
+ .secundaria_conteudo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   margin: 100px 100px;
+ }
+
+ .carreira{
+   font-size: 28px;
+   font-family: "Nokora", sans-serif;
+   text-shadow: black 0.1em 0.1em 0.2em;
+   font-weight: 400;
+   color: var(--cor-do-texto);
+   margin: 1em 1em;
+ }
+
+ .automobilismo{
+   font-family: "Nokora", sans-serif;
+   font-size: 16px;
+   text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+   font-weight: 400;
+   margin: 5px 0;
+   color: var(--cor-do-texto);
+ }
+
+ .foto_senna{
+   height: 500px;
+   margin-top: 80px;
+   filter: drop-shadow(0px 0px 5px rgb(186, 2, 2));
+   z-index: 1;
+ }
+
+ /*Terceira pag*/
+
+ .pag_titulos{
+   z-index: 1;
+   height: 100vh;
+   color: var(--cor-do-texto);
+   background-color: var(--cor-do-fundo);
+   display: flex;
+ }
+
+ .pag_titulos_conteudo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 25px 100px 100px 100px;
+ }
+
+ .condecoracoes{
+   font-size: 20px;
+   font-family: "Nokora", sans-serif;
+   text-shadow: black 0.1em 0.1em 0.2em;
+   font-weight: 400;
+   color: var(--cor-do-texto);
+   margin: 2em 1em 1em 1em;
+ }
+
+ .lista_tri{
+   font-family: "Nokora", sans-serif;
+   font-size: 16px;
+   text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+   font-weight: 400;
+   margin: 5px 0;
+   color: var(--cor-do-texto);
+ }
+
+ .recordes{
+   font-size: 20px;
+   font-family: "Nokora", sans-serif;
+   text-shadow: black 0.1em 0.1em 0.2em;
+   font-weight: 400;
+   color: var(--cor-do-texto);
+   margin: 2em 1em 1em 1em;
+ }
+
+ .recordes_lista_texto{
+   font-family: "Nokora", sans-serif;
+   font-size: 16px;
+   text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+   font-weight: 400;
+   margin: 5px 0;
+   color: var(--cor-do-texto);
+ }
+
+/*rodape*/
+
+.rodape{
+   display: flex;
+   justify-content: center;
+   background-color: var(--cor-do-fundo);
+   z-index: 2;
+}
+.desenvolvido{
+   color: var(--cor-do-texto);
+   font-size: 10px;
+   font-family: "Nokora", sans-serif;
+}
+
+@media screen and (max-width: 1100px) {
+   .secundaria_conteudo{
+      margin-right: 2em;
+
+   }
+   .carreira{
+      font-size: 18px;
+   }
+   .automobilismo{
+      font-size: 13;
+   }
+   .recordes{
+      margin-top: 4em;
+   }
+}
+
+@media  screen and (max-width:950px) {
+   .navegacao{
+      width: 100vw;
+   }
+   .secundaria_pag_textos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .secundaria_conteudo{
+      width: 100vw;
+      margin: 0;
+      margin-top: 2em;
+   }
+   .carreira{
+      font-size: 18px;
+   }
+   .automobilismo{
+      width: 80vw;
+      font-size: 12px;
+   }
+   .foto_senna{
+      margin: 0;
+      width: 60vw;
+      height: 60vw;
+   }
+   .pag_titulos_conteudo{
+      margin: 0;
+      width: 100vw;
+   }
+   .condecoracoes{
+      font-size: 18px;
+      width: 80vw;
+   }
+   .lista{
+      width: 80vw;
+   }
+   .lista_tri{
+      font-size: 12px;
+   }
+   .recordes{
+      margin: 3em 0;
+      font-size: 18px;
+   }
+   .recordes_lista{
+      width: 80vw;
+   }
+   .recordes_lista_texto{
+      font-size: 12px;
+   }
+   
+}
